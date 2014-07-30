@@ -69,4 +69,5 @@ void fixDown(int *q, int f, int t)
         exch(q[f], q[j]);
         f = j;
     }
+    return;
 }
