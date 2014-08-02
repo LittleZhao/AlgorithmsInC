@@ -1,4 +1,4 @@
-//heap sort, low to high
+//heap sort, from large to small
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -60,12 +60,14 @@ void fixDown(int *arr, int f, int t)
     while (2*f<=t)
     {
         i = 2 * f;
-        if ((i<t) && (arr[i]<arr[i+1]))
+        //if ((i<t) && (arr[i]<arr[i+1]))
+        if ((i<t) && (arr[i]>arr[i+1]))
         {
             i += 1;
         }
 
-        if (arr[f]>=arr[i])
+        //if (arr[f]>=arr[i])
+        if (arr[f]<=arr[i])
         {
             break;
         }
