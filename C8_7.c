@@ -24,7 +24,7 @@ int main(void)
     link m = &head;
     int i;
 
-    srand((unsigned) time(NULL));
+    srand((unsigned)time(NULL));
     m->next = NULL;
 
     for (i=0; i<N; i++)
