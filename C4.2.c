@@ -1,5 +1,5 @@
 //cc C4.2.c stack.c STACK.h
-// when you use * in the command line, should be \*
+// use "" to wrap the expression
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
