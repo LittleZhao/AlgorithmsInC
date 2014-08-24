@@ -6,6 +6,10 @@ static int N;
 
 void STACKinit(maxN)
 {
+    if (NULL != s)
+    {
+        STACKfree();
+    }
     s = (int *)malloc(maxN * sizeof(int));
     N = 0;
 }
