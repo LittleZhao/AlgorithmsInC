@@ -21,7 +21,7 @@ int STACKempty()
     return NULL==head;
 }
 
-link NEW(int value, link next)
+static link NEW(int value, link next)
 {
     link new = (link)malloc(sizeof(*new));
     new->data = value;
