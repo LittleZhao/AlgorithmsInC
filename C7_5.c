@@ -74,12 +74,20 @@ void quick_sort(int *a, int l, int r)
     j = i -1;
     i = i + 1;
 
-    for (k=l; k<=p && j>=p; k++, j--)
+    for (k=l; k<=p; k++, j--)
     {
+        if (a[k] == a[j])
+        {
+            continue;
+        }
         exch(a[k], a[j]);
     }
-    for (k=r-1; k>=q && i<=q; k--, i++)
+    for (k=r-1; k>=q; k--, i++)
     {
+        if (a[k] == a[i])
+        {
+            continue;
+        }
         exch(a[k], a[i]);
     }
 
